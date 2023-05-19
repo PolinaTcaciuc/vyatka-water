@@ -1,0 +1,29 @@
+{
+  "name": "vyatkawater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.62.1",
+    "webpack": "^5.83.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "alpinejs": "^3.12.1",
+    "bootstrap": "^5.2.3"
+  }
+}

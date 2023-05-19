@@ -1,0 +1,18 @@
+# Игнорирование временных файлов и папок
+node_modules/
+dist/
+.cache/
+
+.env
+.vscode/
+
+package-lock.json
+
+build/
+out/
+public/
+
+
+test/
+tests/
+*.test.js

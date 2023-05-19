@@ -1,0 +1,15 @@
+
+$grid-breakpoints: (
+  ph: 0,
+  tb: 750px,
+  lp: 950px,
+  dt: 1050px,
+);
+$container-max-widths: (
+  tb: 700px,
+  lp: 900px,
+  dt: 1000px,
+);
+
+
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
