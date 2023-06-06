@@ -16,6 +16,9 @@
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rigger": "^0.5.8",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.62.1",
@@ -24,6 +27,7 @@
   },
   "dependencies": {
     "alpinejs": "^3.12.1",
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "imask": "^6.6.1"
   }
 }

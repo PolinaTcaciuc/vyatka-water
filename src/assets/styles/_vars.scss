@@ -1,0 +1,38 @@
+:root {
+  /* colors */
+  --accent-color: rgba(236 31 58);
+  --accent-color-hover: rgb(249, 23, 53);
+  --accent-color-active: rgb(241, 20, 49);
+  --accent-color-focus: rgb(231, 21, 49);
+  --blue-primary: rgba(80, 190, 255, 1);
+  --blue-primary-hover: rgb(24, 166, 249);
+  --blue-primary-active: rgb(57, 182, 255);
+  --blue-primary-focus: rgb(57, 182, 255);
+  --dark-aquamarine:rgba(50, 135, 191, 1);
+  --dark-aquamarine-hover:rgb(35, 154, 234);
+  --dark-aquamarine-active:rgb(21, 117, 181);
+  --dark-aquamarine-focus:rgb(13, 97, 153);
+  --white-primary: rgba(255, 255, 255, 1);
+  --grey-primary: rgb(229, 229, 229);
+  --black-primary: rgba(0, 0, 0, 1);
+  --dark-blue: rgba(0, 111, 204, 1);
+  --grey-light: rgba(242, 242, 242, 1);
+  --grey-light-hover: rgb(247, 245, 245);
+  --grey-light-active: rgb(237, 237, 237);
+  --green-tr: rgba(164, 234, 255, 0.5);
+  --grey-tr: rgba(255, 255, 255, 0.6);
+  /* fonts */
+  --font-rubik: "Rubik", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  /* z-index */
+
+  --zIndexBurgerMenu: 1500;
+  --zIndexMenuList: 1000;
+  /* transition */
+  --transition-duration: 0.3s;
+  --transition-duration_menu: 0.6s;
+}
+$sm: 580px;
+$tb: 750px;
+$lp: 1000px;
+$dt: 1300px;

@@ -1,0 +1,62 @@
+<!-- header -->
+
+<header
+  x-on:resize.window.throttle.250ms="$store.navigation.resetVariables(window.innerWidth)"
+  class="header"
+  x-data="$store.navigation"
+>
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <!-- header logo -->
+      <a href="#" class="logo col-5 col-lp-3 mx-lp-2">
+        <picture>
+          <source
+            srcset="./images/logo_desktop.webp"
+            type="image/webp"
+            media="(min-width: 750px)"
+          />
+          <img
+            class="logo__img"
+            src="./images/logo_mobile.png"
+            alt="Вятская вода логотип"
+          />
+        </picture>
+      </a>
+      <nav
+        class="menu justify-content-end col d-flex"
+        :class="$store.navigation.isMenuOpen ? 'menu_open' : $store.navigation.isMenuOpen === false ? 'menu_close' : ''"
+      >
+        <!-- menu burger -->
+        <button
+          @click="toggleMenuOpen"
+          x-data
+          class="menu__burger btn-reset justify-content-between align-items-center flex-column"
+          :class="$store.navigation.isMenuOpen ? 'menu__burger_open' : ' '">
+          <template x-for="line in 3">
+            <span class="menu__burger-line align-self-start"></span>
+          </template>
+        </button>
+        <!-- navigation -->
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link link link_underline"
+              >производство</a
+            >
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link link link_underline">вода</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link link link_underline">напитки</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link link link_underline">доставка</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link link link_underline">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

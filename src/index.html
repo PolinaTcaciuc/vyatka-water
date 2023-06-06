@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,9 +7,93 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
-  <body>
-    <div class="container">
-      <h1>hello</h1>
+  <body x-data :class="$store.navigation.isMenuOpen ? '_noscroll' : '' ">
+    <div id="app">
+      <picture>
+        <source
+          srcset="./images/app-bg_desktop.png"
+          type="image/webp"
+          media="(min-width: 750px)"
+        />
+        <img class="app__bg" src="./images/app-bg_mobile.png" alt="" />
+      </picture>
+      @@include('./html/header.html')
+      <main class="main">
+        <!-- hero section -->
+        <section class="hero">
+         <picture>
+            <source srcset="./images/hero-bg_desktop.png"
+            media="(min-width: 750px)">
+            <img class="hero__bg" src="./images/hero-bg_mobile.png" />
+          </picture>
+          <div class="container">
+            <div class="hero__content row">
+              <div class="hero__left col-12 col-sm-9 col-tb-8">
+                <h1 class="title hero__title">
+                  Артезианская вода <br />
+                  с доставкой по казани
+                </h1>
+                <form class="hero__form">
+                  <input
+                    class="hero__form-input"
+                    type="tel"
+                    placeholder="ваш телефон"
+                  />
+                  <button class="hero__form-btn btn-reset btn_base btn_accent">
+                    Заказать
+                  </button>
+                </form>
+              </div>
+              <div class="hero__right col-tb-4">
+                <ul class="contacts-list">
+                  <a href="tel:+7833438366" class="contacts-list__item">
+                    +7 (833) 43-83-66
+                    <div
+                      class="contacts-list__icon contacts-list__icon_telegram">
+                      <img src="./images/icons/icon_telegram.svg" alt="" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://wa.me/+79536968366"
+                    class="contacts-list__item"
+                    >+7 (953) 696-83-66
+                    <div
+                      class="contacts-list__icon contacts-list__icon_whatsapp"
+                    >
+                      <img src="./images/icons/icon_whatsapp.svg" alt="" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/vodaviatskaia/"
+                    class="contacts-list__item"
+                  >
+                    @vodaviatskaia
+                    <div
+                      class="contacts-list__icon contacts-list__icon_instagram"
+                    >
+                      <img src="./images/icons/icon_instagram.svg" alt="" />
+                    </div>
+                  </a>
+                </ul>
+              </div>
+              <div class="hero__bottle-group">
+                <picture>
+                  <source
+                    srcset="./images/bottle-group_desktop.webp"
+                    media="(min-width: 750px)"
+                    type="image/webp"
+                  />
+                  <img
+                    class="hero__bottle-group-img"
+                    src="./images/bottle-group_mobile.png"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="./js/main.js"></script>
   </body>
